@@ -102,7 +102,7 @@ main {
 
 /* Fundo para a página Home */
 body.home main {
-  background: url('fundo.png') no-repeat center center;
+  background: url('Fundo.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -122,7 +122,7 @@ body.quem-somos main p {
 
 /* Fundo para a página Produtos */
 body.produtos main {
-  background: url('fundo.png') no-repeat center center;
+  background: url('Fundo.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -134,7 +134,7 @@ body.produtos main h2 {
 
 /* Fundo para a página Trabalhe Conosco */
 body.trabalhe-conosco main {
-  background: url('fundo.png') no-repeat center center;
+  background: url('Fundo.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -147,7 +147,7 @@ body.trabalhe-conosco main p {
 
 /* Fundo para a página Promoções */
 body.promocoes main {
-  background: url('fundo.png') no-repeat center center;
+  background: url('Fundo.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
