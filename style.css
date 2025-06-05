@@ -1,0 +1,341 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte padrão do site */
+body {
+  background: #fff; /* Fundo branco padrão */
+  color: #000; /* Cor do texto preta */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Fonte especial para títulos e logo */
+h1, h2, h3, .logo {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+  background: #000; /* Fundo preto */
+  padding: 10px 0;
+}
+
+/* Conteúdo do cabeçalho (logo + menu) */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  user-select: none;
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex;
+}
+
+/* Links do menu */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #222;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* Hover e link ativo no menu */
+.menu a:hover,
+.menu a.active {
+  background: #f00;
+  color: #fff;
+}
+
+/* Animação para entrada dos textos */
+@keyframes subirFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Área principal */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  color: #000;
+}
+
+/* Fundo para a página Home */
+body.home main {
+  background: url('fundo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Fundo para a página Quem Somos */
+body.quem-somos main {
+  background: url('fundo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Corrige cor dos textos na página Quem Somos */
+body.quem-somos main h2,
+body.quem-somos main p {
+  color: #fff;
+}
+
+/* Fundo para a página Produtos */
+body.produtos main {
+  background: url('fundo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Título na página Produtos */
+body.produtos main h2 {
+  color: #fff;
+}
+
+/* Fundo para a página Trabalhe Conosco */
+body.trabalhe-conosco main {
+  background: url('fundo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Corrige texto na página Trabalhe Conosco */
+body.trabalhe-conosco main h2,
+body.trabalhe-conosco main p {
+  color: #fff;
+}
+
+/* Fundo para a página Promoções */
+body.promocoes main {
+  background: url('fundo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Animação aplicada aos textos */
+h1, h2, p {
+  animation: subirFade 0.8s ease forwards;
+}
+
+/* Espaçamento dos títulos */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo dos parágrafos */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Lista das promoções */
+main ul {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding-left: 20px;
+}
+
+/* Botão principal (inclusive o botão "Voltar para Produtos") */
+.btn-primary {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s;
+  margin-top: 50px; /* Deixa mais para baixo */
+}
+
+/* Efeito hover no botão */
+.btn-primary:hover {
+  background: #f00;
+}
+
+/* Grid de produtos */
+.produtos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card de cada produto */
+.produto {
+  background: #000000;
+  width: 23%;
+  padding: 15px;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Imagem do produto */
+.produto img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Nome do produto */
+.produto h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Preço do produto */
+.produto p {
+  color: #e00;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Botão dos produtos */
+.produto button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* Hover no botão dos produtos */
+.produto button:hover {
+  background: #f00;
+}
+
+/* Rodapé */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  user-select: none;
+  margin-top: auto;
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 900px) {
+  main {
+    padding: 30px 0;
+  }
+
+  .produto {
+    width: 48%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  main {
+    padding: 20px 0;
+  }
+
+  .produto {
+    width: 100%;
+  }
+
+  .menu a {
+    margin: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
