@@ -109,7 +109,7 @@ body.home main {
 
 /* Fundo para a página Quem Somos */
 body.quem-somos main {
-  background: url('fundo.png') no-repeat center center;
+  background: url('Fundo.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
